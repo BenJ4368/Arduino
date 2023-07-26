@@ -14,20 +14,21 @@ Adafruit_NeoMatrix matrix = Adafruit_NeoMatrix(32, 8, PIN,
 int x = matrix.width();
 int y = 0;
 
-const char *textToPrint = "Info: Reunion studs mercredi 14h14 en cantina          Minecraft: Choix du modpack via sondage sur Discord          Je sais pas quoi ecrire d'autre mdr";
-const int scrollSpeed = 50;
+const char *textToPrint = "Info: Reunion mercredi 14h14 en cantina        RagnaMod VI: IP sur Discord";
+const int scrollSpeed = 30;
 int textWidth;
 
-const unsigned long executionDuration = 6 * 60 *60000; // 8hours
-const unsigned long pauseDuration = 18 * 60 * 60000; // 16 hours
+const unsigned long executionDuration = 8 * 60 *60000; // 8hours
+const unsigned long pauseDuration = 16 * 60 * 60000; // 16 hours
 unsigned long startTime;
 unsigned long currentTime;
 
 void setup() {
+  delay(10000);++
   matrix.begin();
   matrix.setTextWrap(false);
   matrix.setBrightness(100);
-  matrix.setTextColor(matrix.Color(75, 190, 255));
+  matrix.setTextColor(matrix.Color(255, 100, 0));
   startTime = millis();
 }
 
