@@ -14,12 +14,13 @@ Adafruit_NeoMatrix matrix = Adafruit_NeoMatrix(32, 8, PIN,
 int x = matrix.width();
 int y = 0;
 
-const char *textToPrint = "Info: rdv hebdo mercredi 14h14 en cantina        Minecraft: Rejoignez-nous discord.gg/gjtGVZEWV6        Bonne Piscine";
-const int scrollSpeed = 30;
+// Texte à afficher. Eviter les accents, séparer les phrases par 3 tabs
+const char *textToPrint = "Texte";
+const int scrollSpeed = 30;	// Vitesse d'actualisation du texte (plus petit = défile plus vite)
 int textWidth;
 
-const unsigned long executionDuration = 6 * 60 * 60000;
-const unsigned long pauseDuration = 500;
+const unsigned long executionDuration = 6 * 60 * 60000; // Affiche pendant 6h
+const unsigned long pauseDuration = 500; // puis fait une pause de 500ms
 unsigned long startTime;
 unsigned long currentTime;
 
@@ -28,7 +29,7 @@ void setup()
 	matrix.begin();
 	matrix.setTextWrap(false);
 	matrix.setBrightness(100);
-	matrix.setTextColor(matrix.Color(255, 100, 0));
+	matrix.setTextColor(matrix.Color(204, 0, 204)); // Couleur du texte (prefer. contraste élever)
 	startTime = millis();
 }
 
