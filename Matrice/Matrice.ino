@@ -15,7 +15,7 @@ int x = matrix.width();
 int y = 0;
 
 // Texte à afficher. Eviter les accents, séparer les phrases par 3 tabs
-const char *textToPrint = "Texte";
+const char *textToPrint = "Bienvenue a la promo d'Octobre 2023       RdV mercredi a 14:14 pour parler de la vie de l'ecole      Ciao Mac OS";
 const int scrollSpeed = 30;	// Vitesse d'actualisation du texte (plus petit = défile plus vite)
 int textWidth;
 
