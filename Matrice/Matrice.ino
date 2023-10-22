@@ -15,7 +15,7 @@ int x = matrix.width();
 int y = 0;
 
 // Texte à afficher. Eviter les accents, séparer les phrases par 3 tabs
-const char *textToPrint = "Bienvenue Prologin/Girls Can Code!       14/14 RdV mercredi a 14:14      Ciao Mac OS";
+const char *textToPrint = "Bienvenue Prologin/Girls Can Code!       Vie De Campus: RdV mercredi a 14:14      Ciao Mac OS";
 const int scrollSpeed = 30;	// Vitesse d'actualisation du texte (plus petit = défile plus vite)
 int textWidth;
 
