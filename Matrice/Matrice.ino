@@ -29,7 +29,7 @@ void setup()
 	matrix.begin();
 	matrix.setTextWrap(false);
 	matrix.setBrightness(100);
-	matrix.setTextColor(matrix.Color(204, 0, 204)); // Couleur du texte (prefer. contraste élever)
+	matrix.setTextColor(matrix.Color(221, 110, 15)); // Couleur du texte (prefer. contraste élever)
 	startTime = millis();
 }
 
